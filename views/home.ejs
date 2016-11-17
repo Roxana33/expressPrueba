@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <% include partials/head %>
+</head>
+  	<body>
+
+
+      <h1>Hola</h1>
+      <div>Name is <%= name %></div>
+      <div>The URL is <%= url %></div>
+      <h1>Tus bebidas son:</h1>
+      <ul>
+      <%drinks.forEach(function(drink) {
+      %>
+     
+      <%if (drink.drunkness >= 5) {%>
+   		 <li><%=drink.name %> - <%=drink.drunkness %></li>
+		<%} %>
+		
+      <%}); %>
+
+
+
+      </ul>
+	<body class="container">
+
+    	<header>
+        	<% include partials/header %>
+   		</header>
+
+    	<main>
+    	<img src="../images/logo.png"/>
+        	<div class="jumbotron">
+	            <h1>This is great</h1>
+	            <p>Welcome to templating using EJS</p>
+        	</div>
+   		</main>
+
+    <footer>
+        <% include partials/footer %>
+    </footer>
+    
+</body>
+</html>

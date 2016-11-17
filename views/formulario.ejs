@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include partials/head %>
+</head>
+	<body>
+	<header>
+        	<% include partials/header %>
+   		</header>
+	
+	  <h2>Formulario</h2>
+	
+		<form action="/formulario" method="POST">
+
+			<p>
+			<label ><b>Nombre</b></label>
+			<input name="nombre" type="text"></p>
+
+			<p>
+			<label><b>Apellido</b></label>
+			<input name="apellido" type="text"></p>
+
+			<p><button type="submit">Enviar</button></p>
+
+		</form>
+		<footer>
+        	<% include partials/footer %>
+    	</footer>
+	</body>
+</html>
